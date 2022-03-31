@@ -760,6 +760,16 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="btnRestart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAO5JREFUWEftltENgzAMRDMCI3QERmCkjsAG7QYdpSN0hI7QEcJdan81KZg4pR95
+        0kkI8PmwBSJ0On9NjHGEbtAVOsnp38CG0BNSeHyWy+1Bsym1/YRBRrmtHWhSCqBwNe3WAvO1AKTdWmC8
+        JYDivxYYWgIofmuB0Z4AxGctMNkbQKlbC4prAygXsbSBQq8AxD4JFHkGmMR2Oyx611Yzi6UNFNYGeED2
+        J1dYnGzsvKDDXkN+iAaxqANGlgB1485Bw2T9HZ9x54DxWgC/ceeAeSnAHfIddw40GSCOWGk37hJoyP9C
+        /pDOULtxdzrHEcICIXM2C9T27p8AAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>44</value>
   </metadata>

@@ -41,8 +41,8 @@
             this.lbLetras = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbDica = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.pnPalavra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbForca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBoneco)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,7 @@
             this.txtLetra.TabIndex = 1;
             this.txtLetra.Text = "A";
             this.txtLetra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLetra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLetra_KeyPress);
             // 
             // label1
             // 
@@ -101,7 +102,6 @@
             // pnPalavra
             // 
             this.pnPalavra.BackColor = System.Drawing.Color.Transparent;
-            this.pnPalavra.Controls.Add(this.lbCronometro);
             this.pnPalavra.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnPalavra.Location = new System.Drawing.Point(251, 38);
             this.pnPalavra.Name = "pnPalavra";
@@ -113,7 +113,7 @@
             this.lbCronometro.BackColor = System.Drawing.Color.Transparent;
             this.lbCronometro.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCronometro.ForeColor = System.Drawing.Color.White;
-            this.lbCronometro.Location = new System.Drawing.Point(664, 0);
+            this.lbCronometro.Location = new System.Drawing.Point(981, 38);
             this.lbCronometro.Name = "lbCronometro";
             this.lbCronometro.Size = new System.Drawing.Size(60, 50);
             this.lbCronometro.TabIndex = 15;
@@ -171,12 +171,30 @@
             this.lbDica.Text = "DICA:";
             this.lbDica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnRestart
+            // 
+            this.btnRestart.AutoSize = true;
+            this.btnRestart.BackColor = System.Drawing.Color.Transparent;
+            this.btnRestart.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
+            this.btnRestart.Image = ((System.Drawing.Image)(resources.GetObject("btnRestart.Image")));
+            this.btnRestart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestart.Location = new System.Drawing.Point(797, 240);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(178, 46);
+            this.btnRestart.TabIndex = 15;
+            this.btnRestart.Text = "New game";
+            this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1231, 701);
+            this.Controls.Add(this.lbCronometro);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lbDica);
             this.Controls.Add(this.lbLetras);
             this.Controls.Add(this.pbBoneco);
@@ -193,7 +211,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnPalavra.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbForca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBoneco)).EndInit();
             this.ResumeLayout(false);
@@ -214,6 +231,7 @@
         private System.Windows.Forms.Label lbCronometro;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbDica;
+        private System.Windows.Forms.Button btnRestart;
     }
 }
 
