@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pbRelogio = new System.Windows.Forms.PictureBox();
+            this.relogio = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbRelogio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,6 +41,12 @@
             this.pbRelogio.Size = new System.Drawing.Size(316, 311);
             this.pbRelogio.TabIndex = 0;
             this.pbRelogio.TabStop = false;
+            // 
+            // relogio
+            // 
+            this.relogio.Enabled = true;
+            this.relogio.Interval = 1000;
+            this.relogio.Tick += new System.EventHandler(this.relogio_Tick);
             // 
             // Form1
             // 
@@ -63,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbRelogio;
+        private System.Windows.Forms.Timer relogio;
     }
 }
 
