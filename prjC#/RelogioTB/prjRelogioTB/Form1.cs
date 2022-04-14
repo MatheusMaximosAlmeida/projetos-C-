@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace prjRelogioTB
         string caminho = Environment.CurrentDirectory + "\\fundo.png";
         Bitmap fundo;
         Graphics g;
+        Color ponteiro = Color.Red;
         int hora;
         int min;
         int seg;
@@ -34,7 +36,14 @@ namespace prjRelogioTB
         {
             fundo = new Bitmap(pbRelogio.Width, pbRelogio.Height);
             pbRelogio.Image = fundo;
+            if (!File.Exists(caminho))
+            {
+                relogio.Enabled = false;
+                mnFundo_Click(sender, e);
+                relogio.Enabled = true;
+            }
             g = Graphics.FromImage(fundo);
+
         }
 
         private void relogio_Tick(object sender, EventArgs e)
@@ -50,6 +59,7 @@ namespace prjRelogioTB
             DesenharCentro();
             DesenharDigital();
             pbRelogio.CreateGraphics().DrawImage(fundo, 0, 0);
+            GC.Collect();
 
         }
 
@@ -67,7 +77,7 @@ namespace prjRelogioTB
 
         private void DesenharCentro()
         {
-            SolidBrush corSolida = new SolidBrush(Color.Red);
+            SolidBrush corSolida = new SolidBrush(ponteiro);
             int cx = pbRelogio.Width / 2;
             int cy = pbRelogio.Height / 2;
             g.FillEllipse(corSolida, cx - 10, cy - 10, 20, 20);
@@ -89,7 +99,7 @@ namespace prjRelogioTB
             double rad = Math.PI * angulo / 180;
             xhora = (int)(raio * Math.Cos(rad));
             yhora = (int)(raio * Math.Sin(rad));
-            caneta.Color = Color.Black;
+            caneta.Color = ponteiro;
             g.DrawLine(caneta, cx, cy, cx + xhora,
               cy + yhora);
         }
@@ -106,7 +116,7 @@ namespace prjRelogioTB
             double rad = Math.PI * angulo / 180;
             xmin = (int)(raio * Math.Cos(rad));
             ymin = (int)(raio * Math.Sin(rad));
-            caneta.Color = Color.Red;
+            caneta.Color = ponteiro;
             g.DrawLine(caneta, cx, cy, cx + xmin,
               cy + ymin);
         }
@@ -123,10 +133,30 @@ namespace prjRelogioTB
             double rad = Math.PI * angulo / 180;
             xseg = (int)(raio * Math.Cos(rad));
             yseg = (int)(raio * Math.Sin(rad));
-            caneta.Color = Color.Black;
+            caneta.Color = ponteiro;
             g.DrawLine(caneta, cx, cy, cx + xseg, cy + yseg);
 
 
+        }
+
+        private void mnFundo_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "imagens | *.jpg;*.png";
+            relogio.Stop();
+            openFileDialog1.ShowDialog();
+            if (File.Exists(openFileDialog1.FileName))
+            {
+                File.Delete(caminho);
+                File.Copy(openFileDialog1.FileName, caminho);
+
+            }
+            relogio.Start();
+        }
+
+        private void mnPonteiro_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            ponteiro = colorDialog1.Color;
         }
     }
 }
