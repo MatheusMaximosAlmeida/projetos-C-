@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvAlunos = new System.Windows.Forms.DataGridView();
             this.bn = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -46,6 +45,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnMatricular = new System.Windows.Forms.ToolStripButton();
+            this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.pnSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bn)).BeginInit();
@@ -203,6 +203,7 @@
             this.btnMatricular.Name = "btnMatricular";
             this.btnMatricular.Size = new System.Drawing.Size(100, 28);
             this.btnMatricular.Text = "Cadastrar";
+            this.btnMatricular.Click += new System.EventHandler(this.btnMatricular_Click);
             // 
             // Form1
             // 

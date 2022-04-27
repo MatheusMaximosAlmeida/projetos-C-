@@ -33,5 +33,18 @@ namespace prjAcademiaTB
             dgvAlunos.DataSource = bs;
             dgvAlunos.AutoResizeColumns();
         }
+
+        private void btnMatricular_Click(object sender, EventArgs e)
+        {
+            formFichaAluno ficha = new formFichaAluno();
+            ficha.Registro = null;
+            ficha.ShowDialog();
+            if (ficha.Registro != null)
+            {
+                BoaForma.Matricular(ficha.Registro);
+                bs.MoveLast();
+                bs.ResetBindings(false);
+            }
+        }
     }
 }

@@ -16,3 +16,13 @@ C:\Users\Aluno\Downloads\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcadem
 C:\Users\Aluno\Downloads\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.Form1.resources
 C:\Users\Aluno\Downloads\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.Properties.Resources.resources
 C:\Users\Aluno\Downloads\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.csproj.GenerateResource.Cache
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\prjAcademiaTB.exe.config
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.exe
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.pdb
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\prjAcademiaTB.exe
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\prjAcademiaTB.pdb
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.Form1.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.formFichaAluno.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.Properties.Resources.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.csproj.GenerateResource.Cache
