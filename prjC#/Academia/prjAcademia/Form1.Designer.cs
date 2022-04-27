@@ -188,7 +188,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "MaX ACADEMIA";
-            this.Load += new System.EventHandler(this.Form1_Load);
+
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgAluno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bn)).EndInit();
