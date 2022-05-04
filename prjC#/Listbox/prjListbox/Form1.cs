@@ -75,5 +75,32 @@ namespace prjListbox
             lbResposta.Text = "A média é = " + media.ToString();
         }
 
+        private void btnMaior_Click(object sender, EventArgs e)
+        {
+
+
+            double maior = 0;
+
+            foreach (object items in lista.Items)
+            {
+                maior = Math.Max(maior, Convert.ToDouble(items));
+                lbResposta.Text = "O maior valor é: " + maior.ToString();
+            }
+
+        }
+
+        private void btnMenor_Click(object sender, EventArgs e)
+        {
+
+            double menor = 0;
+
+            foreach (object items in lista.Items)
+            {
+                menor = Math.Min(menor, Convert.ToDouble(items));
+                lbResposta.Text = "O menor valor é: " + menor.ToString();
+            }
+
+        }
+
     }
 }

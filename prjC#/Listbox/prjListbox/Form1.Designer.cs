@@ -39,6 +39,7 @@
             this.btnMaior = new System.Windows.Forms.Button();
             this.btnSomar = new System.Windows.Forms.Button();
             this.btnMedia = new System.Windows.Forms.Button();
+            this.btnMenor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +100,7 @@
             this.lista.ItemHeight = 16;
             this.lista.Location = new System.Drawing.Point(12, 160);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(362, 276);
+            this.lista.Size = new System.Drawing.Size(362, 308);
             this.lista.TabIndex = 3;
             // 
             // label2
@@ -127,17 +128,18 @@
             // btnMaior
             // 
             this.btnMaior.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaior.Location = new System.Drawing.Point(379, 387);
+            this.btnMaior.Location = new System.Drawing.Point(379, 356);
             this.btnMaior.Name = "btnMaior";
             this.btnMaior.Size = new System.Drawing.Size(168, 49);
             this.btnMaior.TabIndex = 2;
             this.btnMaior.Text = "Maior";
             this.btnMaior.UseVisualStyleBackColor = true;
+            this.btnMaior.Click += new System.EventHandler(this.btnMaior_Click);
             // 
             // btnSomar
             // 
             this.btnSomar.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.Location = new System.Drawing.Point(379, 229);
+            this.btnSomar.Location = new System.Drawing.Point(379, 230);
             this.btnSomar.Name = "btnSomar";
             this.btnSomar.Size = new System.Drawing.Size(168, 49);
             this.btnSomar.TabIndex = 2;
@@ -148,13 +150,24 @@
             // btnMedia
             // 
             this.btnMedia.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedia.Location = new System.Drawing.Point(381, 308);
+            this.btnMedia.Location = new System.Drawing.Point(380, 293);
             this.btnMedia.Name = "btnMedia";
             this.btnMedia.Size = new System.Drawing.Size(168, 49);
             this.btnMedia.TabIndex = 2;
             this.btnMedia.Text = "Média";
             this.btnMedia.UseVisualStyleBackColor = true;
             this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
+            // 
+            // btnMenor
+            // 
+            this.btnMenor.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenor.Location = new System.Drawing.Point(381, 419);
+            this.btnMenor.Name = "btnMenor";
+            this.btnMenor.Size = new System.Drawing.Size(168, 49);
+            this.btnMenor.TabIndex = 2;
+            this.btnMenor.Text = "Menor";
+            this.btnMenor.UseVisualStyleBackColor = true;
+            this.btnMenor.Click += new System.EventHandler(this.btnMenor_Click);
             // 
             // Form1
             // 
@@ -165,6 +178,7 @@
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.btnMedia);
             this.Controls.Add(this.btnSomar);
+            this.Controls.Add(this.btnMenor);
             this.Controls.Add(this.btnMaior);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAdd);
@@ -195,6 +209,7 @@
         private System.Windows.Forms.Button btnMaior;
         private System.Windows.Forms.Button btnSomar;
         private System.Windows.Forms.Button btnMedia;
+        private System.Windows.Forms.Button btnMenor;
     }
 }
 
