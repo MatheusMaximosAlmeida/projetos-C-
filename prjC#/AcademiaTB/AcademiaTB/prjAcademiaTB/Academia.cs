@@ -22,5 +22,17 @@ namespace prjAcademiaTB
                 Alunos.Add(novo);
             }
         }
+
+        internal void Editar(Aluno aluno)
+        {
+            Aluno p = Alunos.FirstOrDefault(i => i.id == aluno.id);
+            if (p != null)
+            {
+                p.Nome = aluno.Nome;
+                p.Idade = aluno.Idade;
+                p.Peso = aluno.Peso;
+                p.Peso = aluno.Altura;
+            }
+        }
     }
 }

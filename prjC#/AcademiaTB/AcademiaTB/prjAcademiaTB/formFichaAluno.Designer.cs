@@ -99,7 +99,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(291, 204);
+            this.label7.Location = new System.Drawing.Point(291, 189);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 18);
             this.label7.TabIndex = 1;
@@ -110,7 +110,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 204);
+            this.label6.Location = new System.Drawing.Point(22, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 18);
             this.label6.TabIndex = 1;
@@ -121,7 +121,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(291, 114);
+            this.label5.Location = new System.Drawing.Point(291, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 18);
             this.label5.TabIndex = 1;
@@ -132,7 +132,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 114);
+            this.label4.Location = new System.Drawing.Point(23, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 18);
             this.label4.TabIndex = 1;
@@ -152,42 +152,42 @@
             // 
             // txtAltura
             // 
-            this.txtAltura.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAltura.Location = new System.Drawing.Point(287, 233);
+            this.txtAltura.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAltura.Location = new System.Drawing.Point(287, 218);
             this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(246, 33);
+            this.txtAltura.Size = new System.Drawing.Size(246, 27);
             this.txtAltura.TabIndex = 5;
             // 
             // txtPeso
             // 
-            this.txtPeso.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPeso.Location = new System.Drawing.Point(19, 233);
+            this.txtPeso.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPeso.Location = new System.Drawing.Point(19, 218);
             this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(246, 33);
+            this.txtPeso.Size = new System.Drawing.Size(246, 27);
             this.txtPeso.TabIndex = 4;
             // 
             // txtIdade
             // 
-            this.txtIdade.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdade.Location = new System.Drawing.Point(287, 142);
+            this.txtIdade.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdade.Location = new System.Drawing.Point(287, 140);
             this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(246, 33);
+            this.txtIdade.Size = new System.Drawing.Size(246, 23);
             this.txtIdade.TabIndex = 3;
             // 
             // txtNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(19, 142);
+            this.txtNome.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(19, 140);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(246, 33);
+            this.txtNome.Size = new System.Drawing.Size(246, 27);
             this.txtNome.TabIndex = 2;
             // 
             // txtId
             // 
-            this.txtId.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(19, 59);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(246, 33);
+            this.txtId.Size = new System.Drawing.Size(246, 27);
             this.txtId.TabIndex = 1;
             // 
             // btnFechar
@@ -233,6 +233,7 @@
             this.Name = "formFichaAluno";
             this.ShowIcon = false;
             this.Text = "CADASTRAR NOVO ALUNO";
+            this.Load += new System.EventHandler(this.formFichaAluno_Load);
             this.panel1.ResumeLayout(false);
             this.pnFormulario.ResumeLayout(false);
             this.pnFormulario.PerformLayout();

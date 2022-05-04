@@ -46,5 +46,18 @@ namespace prjAcademiaTB
                 bs.ResetBindings(false);
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            formFichaAluno ficha = new formFichaAluno();
+            ficha.Registro = (Aluno)bs.Current;
+            ficha.ShowDialog();
+            if (ficha.Registro != null)
+            {
+                BoaForma.Editar(ficha.Registro);
+                bs.ResetBindings(false);
+                dgvAlunos.AutoResizeColumns();
+            }
+        }
     }
 }

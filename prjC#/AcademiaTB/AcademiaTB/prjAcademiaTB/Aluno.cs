@@ -8,7 +8,7 @@ namespace prjAcademiaTB
 {
     class Aluno
     {
-        public long Id { get; set; }
+        public long id { get; set; }
         public string Nome { get; set; }
         public int Idade { get; set; }
         public double Peso { get; set; }
@@ -17,7 +17,7 @@ namespace prjAcademiaTB
         public Aluno(long Id, string Nome,
             int Idade, double Peso, double Altura)
         {
-            this.Id = Id;
+            this.id = Id;
             this.Nome = Nome;
             this.Idade = Idade;
             this.Peso = Peso;
