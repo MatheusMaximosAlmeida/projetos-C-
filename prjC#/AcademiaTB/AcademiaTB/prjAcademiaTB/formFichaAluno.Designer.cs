@@ -196,13 +196,14 @@
             this.btnFechar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(45)))), ((int)(((byte)(69)))));
             this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
             this.btnFechar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFechar.Location = new System.Drawing.Point(31, 480);
+            this.btnFechar.Location = new System.Drawing.Point(12, 480);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(108, 37);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.Text = "Cancelar";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // BtnSalvar
             // 
@@ -210,7 +211,7 @@
             this.BtnSalvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(201)))), ((int)(((byte)(121)))));
             this.BtnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalvar.Image")));
             this.BtnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSalvar.Location = new System.Drawing.Point(155, 480);
+            this.BtnSalvar.Location = new System.Drawing.Point(158, 480);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(100, 37);
             this.BtnSalvar.TabIndex = 2;
