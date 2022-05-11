@@ -63,7 +63,7 @@ namespace prjAcademiaTB
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Registro = null;
-            this
+            this.Dispose();
         }
 
  

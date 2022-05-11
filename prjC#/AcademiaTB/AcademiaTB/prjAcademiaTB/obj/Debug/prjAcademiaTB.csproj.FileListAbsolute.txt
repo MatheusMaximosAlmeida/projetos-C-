@@ -26,3 +26,7 @@ C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaT
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.formFichaAluno.resources
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.Properties.Resources.resources
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\obj\Debug\prjAcademiaTB.csproj.GenerateResource.Cache
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\x86\sqlite3.dll
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\x64\sqlite3.dll
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\System.Data.SQLite.dll
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\prjC#\AcademiaTB\AcademiaTB\prjAcademiaTB\bin\Debug\System.Data.SQLite.xml
