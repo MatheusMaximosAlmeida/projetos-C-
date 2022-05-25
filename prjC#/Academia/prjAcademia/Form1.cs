@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,7 @@ namespace prjAcademia
             dgvAlunos.DataSource = bs;
             dgvAlunos.AutoResizeColumns();
 
+
         }
 
         private void btnMatricular_Click(object sender, EventArgs e)
@@ -62,6 +64,7 @@ namespace prjAcademia
                 BoaForma.Editar(ficha.Registro);
                 bs.ResetBindings(false);
                 dgvAlunos.AutoResizeColumns();
+                bs_PositionChanged(sender, e); // atualiza foto
             }
         }
 
@@ -86,13 +89,32 @@ namespace prjAcademia
             pesquisa.ShowDialog();
             if (pesquisa.Registro != null)
             {
-                var obj= bs.List.OfType<Aluno>().ToList().
+                var obj = bs.List.OfType<Aluno>().ToList().
                     Find(f => f.Id == pesquisa.Registro.Id);
                 bs.Position = bs.IndexOf(obj);
                 btnEditar_Click(sender, e);
             }
-            
         }
+        private void bs_PositionChanged(object sender, EventArgs e)
+        {
+            if (bs.Count != 0)
+            {
+                Aluno atual = (Aluno)bs.Current;
+                string caminho = Environment.CurrentDirectory + "\\" +
+                    atual.Id + ".png";
+                if (File.Exists(caminho))
+                {
+                    Graphics g = pbFoto.CreateGraphics();
+                    g.Clear(Color.White);
+                    g.DrawImage(Image.FromFile(caminho), 0, 0,
+                        pbFoto.Width, pbFoto.Height);
+                }
+                else
+                {
+                    pbFoto.CreateGraphics().Clear(Color.White);
+                }
+            }
         }
     }
+}
 

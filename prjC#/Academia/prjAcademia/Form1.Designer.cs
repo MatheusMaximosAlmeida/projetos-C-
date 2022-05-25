@@ -31,9 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvAlunos = new System.Windows.Forms.DataGridView();
             this.bn = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -47,32 +49,47 @@
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnPesquisar = new System.Windows.Forms.ToolStripButton();
-            this.bs = new System.Windows.Forms.BindingSource(this.components);
+            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bn)).BeginInit();
             this.bn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(133)))), ((int)(((byte)(181)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(31)))), ((int)(((byte)(51)))));
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1073, 71);
+            this.panel1.Size = new System.Drawing.Size(851, 75);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(10, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(376, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Veja abaixo a lista de quem frequenta sua academia";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(199, 8);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(3, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(666, 47);
+            this.label1.Size = new System.Drawing.Size(376, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "CADASTRO DE ALUNOS DA ACADEMIA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,14 +98,14 @@
             // 
             this.dgvAlunos.AllowUserToAddRows = false;
             this.dgvAlunos.AllowUserToDeleteRows = false;
-            this.dgvAlunos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(30)))));
+            this.dgvAlunos.BackgroundColor = System.Drawing.Color.White;
             this.dgvAlunos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlunos.Location = new System.Drawing.Point(31, 94);
+            this.dgvAlunos.Location = new System.Drawing.Point(10, 90);
             this.dgvAlunos.Name = "dgvAlunos";
             this.dgvAlunos.ReadOnly = true;
             this.dgvAlunos.RowHeadersWidth = 60;
-            this.dgvAlunos.Size = new System.Drawing.Size(1014, 541);
+            this.dgvAlunos.Size = new System.Drawing.Size(538, 263);
             this.dgvAlunos.TabIndex = 1;
             // 
             // bn
@@ -112,14 +129,14 @@
             this.btnEditar,
             this.btnExcluir,
             this.btnPesquisar});
-            this.bn.Location = new System.Drawing.Point(0, 647);
+            this.bn.Location = new System.Drawing.Point(0, 414);
             this.bn.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bn.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bn.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bn.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn.Name = "bn";
             this.bn.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn.Size = new System.Drawing.Size(1075, 39);
+            this.bn.Size = new System.Drawing.Size(853, 31);
             this.bn.TabIndex = 2;
             this.bn.Text = "bindingNavigator1";
             // 
@@ -136,7 +153,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 36);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
             // 
             // bindingNavigatorMovePreviousItem
@@ -196,8 +213,8 @@
             this.btnMatricular.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMatricular.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMatricular.Name = "btnMatricular";
-            this.btnMatricular.Size = new System.Drawing.Size(114, 36);
-            this.btnMatricular.Text = "MATRICULAR";
+            this.btnMatricular.Size = new System.Drawing.Size(89, 28);
+            this.btnMatricular.Text = "Matricular";
             this.btnMatricular.Click += new System.EventHandler(this.btnMatricular_Click);
             // 
             // btnEditar
@@ -206,8 +223,8 @@
             this.btnEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(80, 36);
-            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.Size = new System.Drawing.Size(65, 28);
+            this.btnEditar.Text = "Editar";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
@@ -216,8 +233,8 @@
             this.btnExcluir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(88, 36);
-            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.Size = new System.Drawing.Size(70, 28);
+            this.btnExcluir.Text = "Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnPesquisar
@@ -226,15 +243,25 @@
             this.btnPesquisar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnPesquisar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(103, 36);
-            this.btnPesquisar.Text = "PESQUISAR";
+            this.btnPesquisar.Size = new System.Drawing.Size(85, 28);
+            this.btnPesquisar.Text = "Pesquisar";
+            // 
+            // pbFoto
+            // 
+            this.pbFoto.Location = new System.Drawing.Point(554, 90);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(260, 263);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbFoto.TabIndex = 8;
+            this.pbFoto.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1075, 686);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(853, 445);
+            this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.bn);
             this.Controls.Add(this.dgvAlunos);
             this.Controls.Add(this.panel1);
@@ -245,7 +272,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ACADEMIA BOA FORMA";
+            this.Text = "MAXIMOS ACADEMIA";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();
@@ -253,6 +280,7 @@
             this.bn.ResumeLayout(false);
             this.bn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +306,8 @@
         private System.Windows.Forms.ToolStripButton btnEditar;
         private System.Windows.Forms.ToolStripButton btnExcluir;
         private System.Windows.Forms.ToolStripButton btnPesquisar;
+        private System.Windows.Forms.PictureBox pbFoto;
+        private System.Windows.Forms.Label label2;
     }
 }
 
