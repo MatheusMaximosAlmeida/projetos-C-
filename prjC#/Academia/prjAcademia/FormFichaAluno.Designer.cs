@@ -48,7 +48,7 @@
             this.ep = new System.Windows.Forms.ErrorProvider(this.components);
             this.pbFoto = new System.Windows.Forms.PictureBox();
             this.btnFoto = new System.Windows.Forms.Button();
-            this.saveFoto = new System.Windows.Forms.SaveFileDialog();
+            this.saveFoto = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.pnFormulario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ep)).BeginInit();
@@ -64,7 +64,7 @@
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(31)))), ((int)(((byte)(51)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(996, 84);
+            this.panel1.Size = new System.Drawing.Size(733, 84);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -94,7 +94,7 @@
             this.pnFormulario.Controls.Add(this.label2);
             this.pnFormulario.Location = new System.Drawing.Point(19, 100);
             this.pnFormulario.Name = "pnFormulario";
-            this.pnFormulario.Size = new System.Drawing.Size(392, 240);
+            this.pnFormulario.Size = new System.Drawing.Size(392, 293);
             this.pnFormulario.TabIndex = 2;
             // 
             // txtAltura
@@ -190,11 +190,11 @@
             // btnGravar
             // 
             this.btnGravar.BackColor = System.Drawing.Color.White;
-            this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGravar.ForeColor = System.Drawing.Color.Green;
-            this.btnGravar.Location = new System.Drawing.Point(194, 370);
+            this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGravar.ForeColor = System.Drawing.Color.Black;
+            this.btnGravar.Location = new System.Drawing.Point(194, 425);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(157, 70);
+            this.btnGravar.Size = new System.Drawing.Size(157, 35);
             this.btnGravar.TabIndex = 5;
             this.btnGravar.Text = "GRAVAR";
             this.btnGravar.UseVisualStyleBackColor = false;
@@ -203,11 +203,11 @@
             // btnFechar
             // 
             this.btnFechar.BackColor = System.Drawing.Color.White;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.ForeColor = System.Drawing.Color.Red;
-            this.btnFechar.Location = new System.Drawing.Point(19, 370);
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.Black;
+            this.btnFechar.Location = new System.Drawing.Point(19, 425);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(169, 70);
+            this.btnFechar.Size = new System.Drawing.Size(169, 35);
             this.btnFechar.TabIndex = 6;
             this.btnFechar.Text = "FECHAR";
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -221,7 +221,8 @@
             // 
             this.pbFoto.Location = new System.Drawing.Point(417, 100);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(246, 240);
+            this.pbFoto.Size = new System.Drawing.Size(283, 293);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbFoto.TabIndex = 7;
             this.pbFoto.TabStop = false;
             // 
@@ -232,22 +233,24 @@
             this.btnFoto.ForeColor = System.Drawing.Color.Black;
             this.ep.SetIconAlignment(this.btnFoto, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
             this.btnFoto.Image = ((System.Drawing.Image)(resources.GetObject("btnFoto.Image")));
-            this.btnFoto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnFoto.Location = new System.Drawing.Point(417, 393);
+            this.btnFoto.Location = new System.Drawing.Point(417, 425);
             this.btnFoto.Name = "btnFoto";
-            this.btnFoto.Size = new System.Drawing.Size(246, 47);
+            this.btnFoto.Size = new System.Drawing.Size(283, 35);
             this.btnFoto.TabIndex = 5;
-            this.btnFoto.Text = "Foto";
             this.btnFoto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFoto.UseVisualStyleBackColor = false;
             this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
+            // 
+            // saveFoto
+            // 
+            this.saveFoto.FileName = "openFileDialog1";
             // 
             // FormFichaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(996, 461);
+            this.ClientSize = new System.Drawing.Size(733, 551);
             this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnFoto);
@@ -292,6 +295,6 @@
         private System.Windows.Forms.ErrorProvider ep;
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.Button btnFoto;
-        private System.Windows.Forms.SaveFileDialog saveFoto;
+        private System.Windows.Forms.OpenFileDialog saveFoto;
     }
 }
