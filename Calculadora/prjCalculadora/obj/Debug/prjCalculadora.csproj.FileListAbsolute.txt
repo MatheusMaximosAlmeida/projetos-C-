@@ -1,1 +1,9 @@
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\bin\Debug\prjCalculadora.exe.config
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\bin\Debug\prjCalculadora.exe
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\bin\Debug\prjCalculadora.pdb
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.Form1.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.Properties.Resources.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.csproj.GenerateResource.Cache
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.exe
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Calculadora\prjCalculadora\obj\Debug\prjCalculadora.pdb
