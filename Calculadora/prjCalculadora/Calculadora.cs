@@ -98,5 +98,39 @@ namespace prjCalculadora
             double resultado = Aux1 * porcentagem / 100;
             Visor = porcentagem.ToString();
         }
+
+        public void Seno()
+        {
+            double num = Double.Parse(Visor);
+            Visor = Math.Cos(num / 180 * Math.PI).ToString();
+        }
+
+        public void Cosseno()
+        {
+            double num = Double.Parse(Visor);
+            Visor = Math.Cos(num / 180 * Math.PI).ToString();
+        }
+
+        public void Tangenteo()
+        {
+            double num = Double.Parse(Visor);
+            Visor = Math.Cos(num / 180 * Math.PI).ToString();
+        }
+
+        public void Pi()
+        {
+            Visor = Math.PI.ToString();
+        }
+
+        public void E()
+        {
+            Visor = Math.E.ToString();
+        }
+
+        public void Log()
+        {
+            double num = Double.Parse(Visor);
+            Visor = Math.Log10(num).ToString();
+        }
     }
 }

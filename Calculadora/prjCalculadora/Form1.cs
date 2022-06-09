@@ -18,63 +18,83 @@ namespace prjCalculadora
         }
 
         Calculadora MX = new Calculadora();
+        bool EstadoIgual = false;
 
         private void btn0_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn0.Text);
             lbVisor.Text = MX.Visor;
         }
 
+        private void TestarIgual(object sender, EventArgs e)
+        {
+            if (EstadoIgual == true)
+            {
+                btnAC_Click(sender, e);
+                EstadoIgual = false;
+            }
+        }
+
         private void btn1_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn1.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn2.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn3.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn4.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn5.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn6.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn7.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn8.Text);
             lbVisor.Text = MX.Visor;
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
+            TestarIgual(sender, e);
             MX.SetVisor(btn9.Text);
             lbVisor.Text = MX.Visor;
         }
@@ -127,18 +147,21 @@ namespace prjCalculadora
         {
             MX.RaizQuadrada();
             lbVisor.Text = MX.Visor;
+            EstadoIgual = true;
         }
 
         private void btnFracao_Click(object sender, EventArgs e)
         {
             MX.Fracao();
             lbVisor.Text = MX.Visor;
+            EstadoIgual = true;
         }
 
         private void btnQuadrado_Click(object sender, EventArgs e)
         {
             MX.Quadrado();
             lbVisor.Text = MX.Visor;
+            EstadoIgual = true;
         }
 
         private void btnPontoDecimal_Click(object sender, EventArgs e)
@@ -163,12 +186,21 @@ namespace prjCalculadora
         {
             if (Char.IsNumber(e.KeyChar))
             {
+                TestarIgual(sender, e);
                 MX.SetVisor(Convert.ToString(e.KeyChar));
                 lbVisor.Text = MX.Visor;
+                return;
             }
+
+            if (e.KeyChar == '+') MX.Op = "+";
+            if (e.KeyChar == '-') MX.Op = "-";
+            if (e.KeyChar == '*') MX.Op = "*";
+            if (e.KeyChar == '/') MX.Op = "/";
+            if (e.KeyChar == '=')
+            {
+                btnCalcular_Click(sender, e);
+            }
+
         }
-
-        
-
     }
 }

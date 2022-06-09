@@ -55,6 +55,12 @@
             this.btnPorcentagem = new System.Windows.Forms.Button();
             this.btnFracao = new System.Windows.Forms.Button();
             this.btnQuadrado = new System.Windows.Forms.Button();
+            this.btnSeno = new System.Windows.Forms.Button();
+            this.btnCosseno = new System.Windows.Forms.Button();
+            this.btnTangente = new System.Windows.Forms.Button();
+            this.btnPi = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
             this.pnSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +71,7 @@
             this.pnSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnSuperior.Name = "pnSuperior";
-            this.pnSuperior.Size = new System.Drawing.Size(678, 64);
+            this.pnSuperior.Size = new System.Drawing.Size(1052, 64);
             this.pnSuperior.TabIndex = 0;
             // 
             // lbVisor
@@ -73,7 +79,7 @@
             this.lbVisor.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVisor.Location = new System.Drawing.Point(10, 10);
             this.lbVisor.Name = "lbVisor";
-            this.lbVisor.Size = new System.Drawing.Size(646, 41);
+            this.lbVisor.Size = new System.Drawing.Size(1028, 41);
             this.lbVisor.TabIndex = 0;
             this.lbVisor.Text = "0";
             this.lbVisor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -366,11 +372,83 @@
             this.btnQuadrado.UseVisualStyleBackColor = true;
             this.btnQuadrado.Click += new System.EventHandler(this.btnQuadrado_Click);
             // 
+            // btnSeno
+            // 
+            this.btnSeno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeno.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeno.Location = new System.Drawing.Point(664, 120);
+            this.btnSeno.Name = "btnSeno";
+            this.btnSeno.Size = new System.Drawing.Size(376, 96);
+            this.btnSeno.TabIndex = 1;
+            this.btnSeno.Text = "SENO";
+            this.btnSeno.UseVisualStyleBackColor = true;
+            this.btnSeno.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnCosseno
+            // 
+            this.btnCosseno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCosseno.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCosseno.Location = new System.Drawing.Point(664, 224);
+            this.btnCosseno.Name = "btnCosseno";
+            this.btnCosseno.Size = new System.Drawing.Size(376, 96);
+            this.btnCosseno.TabIndex = 1;
+            this.btnCosseno.Text = "COSSENO";
+            this.btnCosseno.UseVisualStyleBackColor = true;
+            this.btnCosseno.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnTangente
+            // 
+            this.btnTangente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTangente.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTangente.Location = new System.Drawing.Point(664, 326);
+            this.btnTangente.Name = "btnTangente";
+            this.btnTangente.Size = new System.Drawing.Size(376, 96);
+            this.btnTangente.TabIndex = 1;
+            this.btnTangente.Text = "TANGENTE";
+            this.btnTangente.UseVisualStyleBackColor = true;
+            this.btnTangente.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnPi
+            // 
+            this.btnPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPi.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPi.Location = new System.Drawing.Point(664, 426);
+            this.btnPi.Name = "btnPi";
+            this.btnPi.Size = new System.Drawing.Size(187, 96);
+            this.btnPi.TabIndex = 1;
+            this.btnPi.Text = "PI";
+            this.btnPi.UseVisualStyleBackColor = true;
+            this.btnPi.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnE
+            // 
+            this.btnE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnE.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnE.Location = new System.Drawing.Point(857, 426);
+            this.btnE.Name = "btnE";
+            this.btnE.Size = new System.Drawing.Size(183, 96);
+            this.btnE.TabIndex = 1;
+            this.btnE.Text = "E";
+            this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnLog
+            // 
+            this.btnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLog.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(664, 528);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(376, 96);
+            this.btnLog.TabIndex = 1;
+            this.btnLog.Text = "LOG";
+            this.btnLog.UseVisualStyleBackColor = true;
+            this.btnLog.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 691);
+            this.ClientSize = new System.Drawing.Size(1052, 691);
             this.Controls.Add(this.btnSomar);
             this.Controls.Add(this.btnSubtrair);
             this.Controls.Add(this.btnMultiplicar);
@@ -378,6 +456,12 @@
             this.Controls.Add(this.btnFracao);
             this.Controls.Add(this.btnPorcentagem);
             this.Controls.Add(this.btnRaiz);
+            this.Controls.Add(this.btnLog);
+            this.Controls.Add(this.btnE);
+            this.Controls.Add(this.btnPi);
+            this.Controls.Add(this.btnTangente);
+            this.Controls.Add(this.btnCosseno);
+            this.Controls.Add(this.btnSeno);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnAC);
             this.Controls.Add(this.btnBK);
@@ -438,6 +522,12 @@
         private System.Windows.Forms.Button btnPorcentagem;
         private System.Windows.Forms.Button btnFracao;
         private System.Windows.Forms.Button btnQuadrado;
+        private System.Windows.Forms.Button btnSeno;
+        private System.Windows.Forms.Button btnCosseno;
+        private System.Windows.Forms.Button btnTangente;
+        private System.Windows.Forms.Button btnPi;
+        private System.Windows.Forms.Button btnE;
+        private System.Windows.Forms.Button btnLog;
     }
 }
 
