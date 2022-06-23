@@ -22,5 +22,16 @@ namespace prjRestaurante.visao
             FormPrincipal pai = (FormPrincipal)this.MdiParent;
             pai.frProdutos = null;
         }
+
+        private void formProduto_Load(object sender, EventArgs e)
+        {
+            controle.ProdutoDB tabela = new controle.ProdutoDB();
+            tabela.Listar(bs);
+            lbIDProduto.DataBindings.Add(new Binding("text", bs, "idproduto"));
+            lbNome.DataBindings.Add(new Binding("text", bs, "nome"));
+            lbPreco.DataBindings.Add(new Binding("text", bs, "preco"));
+            bn.BindingSource = bs;
+        }
+
     }
 }

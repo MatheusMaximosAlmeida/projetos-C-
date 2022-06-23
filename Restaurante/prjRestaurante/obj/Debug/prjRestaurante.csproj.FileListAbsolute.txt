@@ -8,3 +8,5 @@ C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante\obj\Debug\prjRestaurante.pdb
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante\obj\Debug\prjRestaurante.visao.FormPrincipal.resources
 C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante\obj\Debug\prjRestaurante.visao.FormProduto.resources
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante\bin\Debug\EntityFramework.dll
+C:\Users\Aluno\Documents\GitHub\projetosDsenv.Sitemas\Restaurante\prjRestaurante\bin\Debug\EntityFramework.xml

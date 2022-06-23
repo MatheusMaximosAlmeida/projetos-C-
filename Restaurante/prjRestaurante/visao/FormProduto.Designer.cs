@@ -54,7 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbTipo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbPreco = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bn)).BeginInit();
             this.bn.SuspendLayout();
@@ -100,7 +100,7 @@
             this.btnEditar,
             this.btnPesquisar,
             this.btnExcluir});
-            this.bn.Location = new System.Drawing.Point(0, 572);
+            this.bn.Location = new System.Drawing.Point(0, 526);
             this.bn.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bn.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bn.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -218,7 +218,7 @@
             // 
             // lbIDProduto
             // 
-            this.lbIDProduto.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbIDProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
             this.lbIDProduto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIDProduto.Location = new System.Drawing.Point(42, 150);
             this.lbIDProduto.Name = "lbIDProduto";
@@ -239,7 +239,7 @@
             // 
             // lbNome
             // 
-            this.lbNome.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
             this.lbNome.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNome.Location = new System.Drawing.Point(479, 150);
             this.lbNome.Name = "lbNome";
@@ -260,7 +260,7 @@
             // 
             // lbTipo
             // 
-            this.lbTipo.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
             this.lbTipo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTipo.Location = new System.Drawing.Point(42, 276);
             this.lbTipo.Name = "lbTipo";
@@ -279,25 +279,25 @@
             this.label5.Text = "Preço do produto";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lbPreco
             // 
-            this.label6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(479, 276);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(400, 48);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "R$ 0,00";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbPreco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
+            this.lbPreco.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPreco.Location = new System.Drawing.Point(479, 276);
+            this.lbPreco.Name = "lbPreco";
+            this.lbPreco.Size = new System.Drawing.Size(400, 48);
+            this.lbPreco.TabIndex = 2;
+            this.lbPreco.Text = "R$ 0,00";
+            this.lbPreco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 597);
+            this.ClientSize = new System.Drawing.Size(926, 551);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbPreco);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbTipo);
             this.Controls.Add(this.label3);
@@ -347,6 +347,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbTipo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbPreco;
     }
 }
