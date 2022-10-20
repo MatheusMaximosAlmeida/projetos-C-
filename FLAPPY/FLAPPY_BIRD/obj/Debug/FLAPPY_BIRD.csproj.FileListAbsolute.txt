@@ -1,0 +1,9 @@
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\bin\Debug\FLAPPY_BIRD.exe.config
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\bin\Debug\FLAPPY_BIRD.exe
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\bin\Debug\FLAPPY_BIRD.pdb
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.csprojResolveAssemblyReference.cache
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.Form1.resources
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.Properties.Resources.resources
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.csproj.GenerateResource.Cache
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.exe
+c:\users\aluno\documents\visual studio 2013\Projects\FLAPPY\FLAPPY_BIRD\obj\Debug\FLAPPY_BIRD.pdb
