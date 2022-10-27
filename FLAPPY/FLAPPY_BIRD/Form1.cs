@@ -20,6 +20,7 @@ namespace FLAPPY_BIRD
         int gravidade = 5;
         int speed = 10;
         int placar = 0;
+        int Recorde = 0;
 
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -58,13 +59,33 @@ namespace FLAPPY_BIRD
                 placar++;
             }
 
-            if (Bird.Bounds.IntersectsWith(tuboInferior.Bounds) || Bird.Bounds.IntersectsWith(tuboSuperior.Bounds) || Bird.Top < 0 || Bird.Bounds.IntersectsWith (Ground.Bounds)) 
+            if (Bird.Bounds.IntersectsWith(tuboInferior.Bounds) ||
+                 Bird.Bounds.IntersectsWith(tuboSuperior.Bounds) ||
+                 Bird.Top < 0 ||
+                 Bird.Bounds.IntersectsWith(Ground.Bounds))
             {
                 Jogo.Stop();
-                lbMensagem.Text = "Você perdeu!";
+                lbMensagem.Text = "Voce perdeu!";
+                if (placar > Recorde)
+                {
+                    Recorde = placar;
+                    lbRecord.Text = String.Format("Recorde: {0}", Recorde);
+                    Registro.Gravar("FLAPPY", "recorde", Recorde.ToString());
+                }
             }
 
-            lbPlacar.Text = String.Format("PLACAR: {0}", placar.ToString().PadLeft(2, '0')); 
+            lbPlacar.Text = String.Format("PLACAR: {0}", placar.ToString().PadLeft(2, '0'));
+
+            acelerar();
+
+        }
+
+        private void acelerar()
+        {
+            if (placar > 15) speed = 10;
+            if (placar > 25) speed = 15;
+            if (placar > 35) speed = 18;
+            if (placar > 40) speed = 22;
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -81,6 +102,22 @@ namespace FLAPPY_BIRD
 
                 Bird.Top = this.Height / 2;
                 lbMensagem.Text = "Pressione ESC para sair...";
+            }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Recorde = Int32.Parse(
+                Registro.Ler("FLAPPY", "Recorde"));
+            lbRecord.Text = String.Format("REC: {0}", Recorde);
+            if (DateTime.Now.Hour > 18)
+            {
+                this.BackColor = Color.Black;
+                lbRecord.BackColor = Color.Black;
+            }
+            else
+            {
+                this.BackColor = Color.SkyBlue;
+                lbRecord.BackColor = Color.SkyBlue;
             }
         }
     }

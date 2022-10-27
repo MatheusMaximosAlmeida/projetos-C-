@@ -37,6 +37,7 @@
             this.tuboSuperior = new System.Windows.Forms.PictureBox();
             this.lbPlacar = new System.Windows.Forms.Label();
             this.lbMensagem = new System.Windows.Forms.Label();
+            this.lbRecord = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuboInferior)).BeginInit();
@@ -48,8 +49,8 @@
             this.Bird.Image = ((System.Drawing.Image)(resources.GetObject("Bird.Image")));
             this.Bird.Location = new System.Drawing.Point(97, 283);
             this.Bird.Name = "Bird";
-            this.Bird.Size = new System.Drawing.Size(64, 64);
-            this.Bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bird.Size = new System.Drawing.Size(96, 96);
+            this.Bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Bird.TabIndex = 0;
             this.Bird.TabStop = false;
             // 
@@ -65,7 +66,7 @@
             this.Ground.Image = ((System.Drawing.Image)(resources.GetObject("Ground.Image")));
             this.Ground.Location = new System.Drawing.Point(0, 598);
             this.Ground.Name = "Ground";
-            this.Ground.Size = new System.Drawing.Size(947, 72);
+            this.Ground.Size = new System.Drawing.Size(1286, 72);
             this.Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ground.TabIndex = 1;
             this.Ground.TabStop = false;
@@ -73,7 +74,7 @@
             // tuboInferior
             // 
             this.tuboInferior.Image = ((System.Drawing.Image)(resources.GetObject("tuboInferior.Image")));
-            this.tuboInferior.Location = new System.Drawing.Point(819, 359);
+            this.tuboInferior.Location = new System.Drawing.Point(1097, 359);
             this.tuboInferior.Name = "tuboInferior";
             this.tuboInferior.Size = new System.Drawing.Size(100, 240);
             this.tuboInferior.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,7 +84,7 @@
             // tuboSuperior
             // 
             this.tuboSuperior.Image = ((System.Drawing.Image)(resources.GetObject("tuboSuperior.Image")));
-            this.tuboSuperior.Location = new System.Drawing.Point(610, 0);
+            this.tuboSuperior.Location = new System.Drawing.Point(781, 0);
             this.tuboSuperior.Name = "tuboSuperior";
             this.tuboSuperior.Size = new System.Drawing.Size(100, 240);
             this.tuboSuperior.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +98,7 @@
             this.lbPlacar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(28)))), ((int)(((byte)(31)))));
             this.lbPlacar.Location = new System.Drawing.Point(721, 617);
             this.lbPlacar.Name = "lbPlacar";
-            this.lbPlacar.Size = new System.Drawing.Size(214, 47);
+            this.lbPlacar.Size = new System.Drawing.Size(553, 47);
             this.lbPlacar.TabIndex = 3;
             this.lbPlacar.Text = "Placar = 0";
             this.lbPlacar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,18 +115,30 @@
             this.lbMensagem.Text = "ESC para sair";
             this.lbMensagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbRecord
+            // 
+            this.lbRecord.AutoSize = true;
+            this.lbRecord.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRecord.ForeColor = System.Drawing.Color.White;
+            this.lbRecord.Location = new System.Drawing.Point(1158, 9);
+            this.lbRecord.Name = "lbRecord";
+            this.lbRecord.Size = new System.Drawing.Size(116, 30);
+            this.lbRecord.TabIndex = 4;
+            this.lbRecord.Text = "Recorde: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(947, 670);
+            this.ClientSize = new System.Drawing.Size(1286, 670);
             this.Controls.Add(this.lbMensagem);
             this.Controls.Add(this.lbPlacar);
             this.Controls.Add(this.tuboSuperior);
             this.Controls.Add(this.tuboInferior);
             this.Controls.Add(this.Ground);
             this.Controls.Add(this.Bird);
+            this.Controls.Add(this.lbRecord);
             this.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
@@ -141,6 +154,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tuboInferior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tuboSuperior)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,6 +167,7 @@
         private System.Windows.Forms.PictureBox tuboSuperior;
         private System.Windows.Forms.Label lbPlacar;
         private System.Windows.Forms.Label lbMensagem;
+        private System.Windows.Forms.Label lbRecord;
     }
 }
 
